@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "94.198.220.183",
-      "server_port": 64674,
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "65.109.215.118",
+      "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
-      "password": "s8LbJCgUiGXeCKVc63tHJP"
+      "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
