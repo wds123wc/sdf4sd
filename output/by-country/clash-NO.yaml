@@ -23,7 +23,33 @@ proxies:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
     short-id: b545fe8c5e22f92d
   servername: bowandbead.com
-  client-fingerprint: edge
+  client-fingerprint: qq
+- name: 🇳🇴 挪威 (Norway) 03 - xiaohe
+  server: aldebaran.yokkastars.com
+  port: 40443
+  udp: true
+  type: vless
+  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+  tls: true
+  reality-opts:
+    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
+    short-id: '7606'
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇳🇴 挪威 (Norway) 04 - xiaohe
+  server: 178.250.157.177
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 617dc5cf-915f-43b2-a0d4-4057584d9d33
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +57,8 @@ proxy-groups:
   - AUTO
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
   - 🇳🇴 挪威 (Norway) 02 - xiaohe
+  - 🇳🇴 挪威 (Norway) 03 - xiaohe
+  - 🇳🇴 挪威 (Norway) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +66,7 @@ proxy-groups:
   proxies:
   - 🇳🇴 挪威 (Norway) 01 - xiaohe
   - 🇳🇴 挪威 (Norway) 02 - xiaohe
+  - 🇳🇴 挪威 (Norway) 03 - xiaohe
+  - 🇳🇴 挪威 (Norway) 04 - xiaohe
 rules:
 - MATCH,PROXIES
