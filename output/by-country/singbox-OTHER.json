@@ -4,15 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "104.165.205.42",
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "shop.neexbyte.ir",
       "server_port": 8443,
-      "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
+      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
       "tls": {
         "enabled": true,
-        "server_name": "speedtestmark.com",
+        "server_name": "shop.neexbyte.ir",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -20,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

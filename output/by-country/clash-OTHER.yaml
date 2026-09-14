@@ -4,28 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 103.86.49.57
-  port: 80
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: shop.neexbyte.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  tls: true
+  servername: shop.neexbyte.ir
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
