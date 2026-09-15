@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe
-  server: 162.159.153.4
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.25.99.169
   port: 443
   udp: true
   type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: 50414e45-4c5f-5a45-5553-60c86b8747e5
   tls: true
-  servername: rayan-007.maxima.dpdns.org
+  servername: web-app-aug8yr.app-f1qsy1.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: ws
   ws-opts:
-    path: /
+    path: /api/ws
     headers:
-      Host: rayan-007.maxima.dpdns.org
+      Host: web-app-aug8yr.app-f1qsy1.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES

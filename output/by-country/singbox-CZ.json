@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "104.21.96.1",
+      "server": "162.159.152.4",
       "server_port": 443,
-      "uuid": "0836463b-214f-4af6-aa85-85a56a62388e",
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
       "tls": {
         "enabled": true,
-        "server_name": "D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev",
+        "server_name": "rayan-007.maxima.dpdns.org",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -21,7 +21,7 @@
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev"
+          "Host": "rayan-007.maxima.dpdns.org"
         }
       }
     },

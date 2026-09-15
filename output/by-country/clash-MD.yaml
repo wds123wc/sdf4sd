@@ -16,7 +16,7 @@ proxies:
     public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
     short-id: 00a61d55a07de885
   servername: fr.convert-flow.net
-  client-fingerprint: chrome
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

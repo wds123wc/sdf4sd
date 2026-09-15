@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.21.96.1
+  server: 162.159.152.4
   port: 443
   udp: true
   type: vless
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   tls: true
-  servername: D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev
+  servername: rayan-007.maxima.dpdns.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: D2127A49-Flat-WOoD-c4b5.Milia-AKbaRpOor.workers.Dev
+      Host: rayan-007.maxima.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
