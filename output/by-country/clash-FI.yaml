@@ -5,37 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 65.109.215.118
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 185.255.179.11
-  port: 9443
-  udp: true
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  servername: hub-se-02.hanvpn.cc
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: se02-grpc-8e47a
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: fl.windconnect.pro
-  port: 443
-  udp: true
-  type: vless
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
-    short-id: 3c6ec7b2d73a28b6
-  servername: fl.windconnect.pro
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
