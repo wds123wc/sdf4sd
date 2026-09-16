@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 104.18.46.46
+  server: 104.18.34.14
   port: 2095
   udp: true
   type: vless
@@ -16,8 +16,8 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 162.159.0.169
-  port: 2052
+  server: 162.159.48.32
+  port: 8080
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -27,6 +27,32 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  server: 162.159.43.187
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  server: 188.114.96.7
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 362a79a2-ce89-8d2d-355c-f1f5071a445f
+  tls: true
+  servername: fragrant-unit-d662.mmammatrix770088.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: fragrant-unit-d662.mmammatrix770088.workers.dev
+- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
   server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
@@ -47,6 +73,8 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +83,7 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
 rules:
 - MATCH,PROXIES

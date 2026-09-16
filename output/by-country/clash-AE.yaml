@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 5059a06c-ed43-48d8-a276-b202c55019e8
+  uuid: a85d3eb0-c71e-4086-8139-6ac7c9120389
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -35,7 +35,6 @@ proxies:
   tls: true
   servername: srv-21bac9.vless.monster
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
@@ -46,9 +45,9 @@ proxies:
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -56,8 +55,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
