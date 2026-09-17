@@ -16,21 +16,6 @@ proxies:
     headers:
       Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 8.222.84.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /member/discount
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
   server: 118.193.57.167
   port: 49667
   udp: true
@@ -48,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 rules:
 - MATCH,PROXIES
