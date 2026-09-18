@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - xiaohe
-  server: 94.241.174.157
+  server: edge.netraidly.ru
   port: 40443
   udp: true
   type: vless
