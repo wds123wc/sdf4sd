@@ -31,6 +31,16 @@
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
       "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+      "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "tls": {
@@ -42,14 +52,6 @@
           "fingerprint": "firefox"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "212.87.190.124",
-      "server_port": 99,
-      "method": "chacha20-ietf-poly1305",
-      "password": "6nQnSKAxCLJSZbg7KA94QA"
     },
     {
       "type": "hysteria2",
