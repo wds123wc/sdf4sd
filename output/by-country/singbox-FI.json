@@ -12,31 +12,8 @@
       "password": "o2rw2hICwu1blrr_gZAl2Q"
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "150.241.71.148",
-      "server_port": 448,
-      "password": "6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV",
-      "tls": {
-        "enabled": true,
-        "server_name": "kiev.gosgenarchive.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TrojanGRPC"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
       "server": "185.255.179.11",
       "server_port": 9443,
       "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
@@ -56,8 +33,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ]
     },
     {
@@ -65,8 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
