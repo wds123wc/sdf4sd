@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 138.124.109.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6a9f6c23-2b38-4720-9305-337f494f50a4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cttKOS1BlF-u-mvX63PWNPJK6W_RXfx1wo8yjBEt1hI
-    short-id: a2eb8d694a5480ff
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   server: 156.226.168.221
   port: 35193
   udp: true
@@ -30,6 +17,21 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: ios
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  server: 176.124.220.173
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
