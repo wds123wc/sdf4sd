@@ -20,6 +20,14 @@ proxies:
     headers:
       Host: odd-violet-5440.asdgrweeee13.workers.dev
 - name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 13.207.151.141
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-in-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -31,7 +39,7 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - xiaohe
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 34.93.188.70
   port: 443
   udp: true
@@ -43,14 +51,6 @@ proxies:
     short-id: b9299afa0dcac824
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 35.154.58.87
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 05 - xiaohe
   server: 34.47.245.203
   port: 443
@@ -69,7 +69,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
+  sni: whatsapp.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
