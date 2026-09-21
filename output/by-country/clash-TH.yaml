@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
-  server: 34.15.162.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  tls: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-    short-id: ca672c53fbbac555
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   server: 103.86.49.57
   port: 80
   udp: true
@@ -27,17 +15,18 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 118.193.57.167
-  port: 49667
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
+  server: 34.15.162.1
+  port: 443
   udp: true
-  type: vmess
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /d46bf492
+  type: vless
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  tls: true
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
   - 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  - 🇹🇭 泰国 (Thailand) 03 - xiaohe
 rules:
 - MATCH,PROXIES

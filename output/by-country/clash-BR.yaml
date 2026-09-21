@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 104.21.78.225
-  port: 443
+- name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  server: 132.243.203.218
+  port: 8443
   udp: true
   type: vless
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /v?ed=2560
     headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
 rules:
 - MATCH,PROXIES

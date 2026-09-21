@@ -5,24 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "104.21.78.225",
-      "server_port": 443,
-      "uuid": "4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+      "server": "138.2.59.96",
+      "server_port": 10129,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "curly-night-6928.ggdhchjk.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/",
         "headers": {
-          "Host": "curly-night-6928.ggdhchjk.workers.dev"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -31,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
