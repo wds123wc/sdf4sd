@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 132.243.203.218
+  server: 31.58.76.68
   port: 8443
   udp: true
   type: vless
@@ -16,7 +16,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /v?ed=2560
+    path: /new/dh?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
