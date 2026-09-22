@@ -5,40 +5,42 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "34.15.162.1",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+      "server": "92.118.127.16",
       "server_port": 443,
-      "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
+      "uuid": "72f8e59f-7a0d-44f2-a8db-b4c3e1e36716",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "sp1.extremumnews.com",
         "utls": {
           "enabled": true,
           "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw",
-          "short_id": "ca672c53fbbac555"
+          "public_key": "Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg",
+          "short_id": "908563a721d9bdcd"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "104.18.26.90",
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
+      "server": "mygptagent.org",
       "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
+        "server_name": "mygptagent.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/linkvws",
         "headers": {
-          "Host": "v2ray.simspeedup.com"
+          "Host": "mygptagent.org"
         }
       }
     },
@@ -47,16 +49,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 02 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+        "🇪🇸 西班牙 (Spain) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
