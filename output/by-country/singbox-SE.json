@@ -5,16 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "172.67.192.84",
-      "server_port": 2095,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
+      "server": "143.246.194.60",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
-        "path": "/juvsrnmgdu8i0179k5",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
+        "path": "/vless-test"
       }
     },
     {
@@ -22,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
