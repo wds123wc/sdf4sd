@@ -19,12 +19,34 @@
       "password": "itzvpn@321"
     },
     {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 03 - xiaohe",
+      "server": "31.77.201.33",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "italia.superbuba.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "short_id": "4fa44664f6a566d3"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
-        "🇮🇹 意大利 (Italy) 02 - xiaohe"
+        "🇮🇹 意大利 (Italy) 02 - xiaohe",
+        "🇮🇹 意大利 (Italy) 03 - xiaohe"
       ]
     },
     {
@@ -32,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - xiaohe",
-        "🇮🇹 意大利 (Italy) 02 - xiaohe"
+        "🇮🇹 意大利 (Italy) 02 - xiaohe",
+        "🇮🇹 意大利 (Italy) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
