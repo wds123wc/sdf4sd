@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   udp: true
   type: vmess
@@ -48,7 +48,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: qq
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
   server: vpn-au-002.fastervpn.world
   port: 443
@@ -57,6 +57,19 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: whatsapp.com
   skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
+  server: au1.gsafevpnapi.com
+  port: 20270
+  udp: true
+  type: vless
+  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
+    short-id: e6a5a4a9115456de
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +80,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +91,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 04 - xiaohe
   - 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

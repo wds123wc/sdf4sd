@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
+  server: 193.23.201.65
+  port: 5432
+  udp: true
+  type: vless
+  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 193.23.201.65
+  skip-cert-verify: false
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 2.27.175.71
   port: 443
   udp: true
@@ -17,7 +28,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 62.60.229.124
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts
+  servername: finland.b2ai.top
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 31.76.80.230
   port: 8443
   udp: true
@@ -26,11 +49,10 @@ proxies:
   tls: true
   servername: fin.luxes.network
   skip-cert-verify: false
-  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /assets
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: iq5ny.pleiades.codes
   port: 8443
   udp: true
@@ -46,6 +68,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +78,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
