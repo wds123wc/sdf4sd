@@ -16,7 +16,7 @@ proxies:
     public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
-  client-fingerprint: ''
+  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 131.123.41.18
   port: 443
@@ -29,7 +29,7 @@ proxies:
     public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
-  client-fingerprint: ''
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
