@@ -5,6 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 132.243.65.151
+  port: 443
+  udp: true
+  type: vless
+  uuid: 17f388d7-1fa2-440f-a8f4-720b72d19195
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: ee.global-cdn.org
+  client-fingerprint: safari
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 132.243.65.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: 46699f9f-b815-47d8-a657-08494b74aa93
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0
+    short-id: 7a3f9e2b1c8d4f6a
+  servername: ee.global-cdn.org
+  client-fingerprint: safari
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 94.183.170.147
   port: 8443
   udp: true
@@ -19,7 +54,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -29,15 +64,6 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +72,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +82,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

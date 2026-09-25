@@ -32,11 +32,7 @@
       "tls": {
         "enabled": true,
         "server_name": "assets-fi.pleiades.codes",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "grpc",
@@ -44,8 +40,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "me6.movieseryalirani.ir",
+      "server_port": 57361,
+      "uuid": "ed815caa-bff1-4419-8c61-1d108eabaf1f",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
       "server": "est1313.ggisopi.su",
       "server_port": 443,
       "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
@@ -63,14 +67,6 @@
           "short_id": ""
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "p1tun3.greewebservices.ir",
-      "server_port": 2070,
-      "method": "chacha20-ietf-poly1305",
-      "password": "cVvgP0Bz69hsErPBvqKbwQ"
     },
     {
       "type": "selector",
