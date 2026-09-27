@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.44
-  port: 9063
+  port: 9041
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
+  password: U6qnYRhfyDmn8sgn
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 217.30.10.44
   port: 9006
@@ -19,21 +19,7 @@ proxies:
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 185.223.57.16
-  port: 33743
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: pl1.gursub.com
+  server: 151.241.138.151
   port: 8444
   udp: true
   type: vless
@@ -44,9 +30,23 @@ proxies:
     public-key: sQ9CcspZ6urWlzGNjjmtfp8EuuDll5RVtcsVoq_EfUE
     short-id: a3f509aa7a4b41cc
   servername: pl1.gursub.com
-  client-fingerprint: ''
+  client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 185.223.57.16
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: admin.wwwinternetvideo.click
+  server: 45.192.12.93
   port: 443
   udp: true
   type: hysteria2
@@ -67,31 +67,26 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 50.7.249.174
+  server: streambox.wwwinternetvideo.click
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: polik.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: 185.229.9.157
+  server: pl.astrafic.ru
   port: 443
   udp: true
   type: vless
-  uuid: 9e4f675b-d6bf-42d1-be55-389f622783af
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
   tls: true
-  reality-opts:
-    public-key: JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k
-    short-id: 27e53bbcab7593d7
-  servername: 360.yandex.ru
-  client-fingerprint: safari
+  servername: pl.astrafic.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: ''
+    grpc-service-name: vless-grpc
 - name: 🇵🇱 波兰 (Poland) 09 - xiaohe
   server: 146.59.116.19
   port: 17000
@@ -100,18 +95,17 @@ proxies:
   cipher: aes-256-gcm
   password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇵🇱 波兰 (Poland) 10 - xiaohe
-  server: 188.114.96.19
-  port: 80
+  server: 31.77.13.19
+  port: 2063
   udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
