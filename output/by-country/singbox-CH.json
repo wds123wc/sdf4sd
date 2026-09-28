@@ -11,22 +11,32 @@
       "password": "84a506ca5aca505696a454d828420b3f",
       "tls": {
         "enabled": true,
-        "server_name": "140.238.213.114",
+        "server_name": "www.bing.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
-      "transport": {
-        "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
-        "headers": {
-          "Host": "netlivpn2950.bbxff.workers.dev"
+      "server": "45.90.57.251",
+      "server_port": 443,
+      "uuid": "10b78ac4-d4ce-43d2-98c4-c62c96fcbdc2",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "20kKpOl77grCupOod4O_X1u74fJT38yc2Nhxy8enywc",
+          "short_id": "fd4f9db207ff64db"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel_nl"
       }
     },
     {
@@ -64,7 +74,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -76,7 +86,7 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-      "server": "82.38.64.239",
+      "server": "82.38.64.237",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
