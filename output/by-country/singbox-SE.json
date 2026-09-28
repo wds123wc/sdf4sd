@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "13.48.104.64",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -21,15 +13,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "51.20.72.15",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "server": "51.20.122.188",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -50,24 +42,54 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "2.27.14.218",
-      "server_port": 2096,
-      "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
+      "server": "79.141.174.147",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
-        "server_name": "stf7697.rumedia-cdn.com",
-        "insecure": false,
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "stf7697.rumedia-cdn.com"
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+      "server": "51.20.72.15",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
+      "server": "88.216.223.41",
+      "server_port": 443,
+      "uuid": "94877739-3af6-4fbb-85b6-ca6fe86c7696",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "app.goonars.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0",
+          "short_id": "95e51c18"
         }
       }
     },
@@ -80,7 +102,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
       ]
     },
     {
@@ -91,7 +114,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
         "🇸🇪 瑞典 (Sweden) 04 - xiaohe",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaohe"
+        "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
+        "🇸🇪 瑞典 (Sweden) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
