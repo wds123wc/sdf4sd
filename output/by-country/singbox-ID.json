@@ -16,7 +16,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/trojan#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "path": "/trojan",
         "headers": {
           "Host": "id1.nathaya.web.id"
         }

@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /trojan#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /trojan
 proxy-groups:
 - name: PROXIES
   type: select

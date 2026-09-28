@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   server: 185.95.231.233
   port: 443
@@ -42,7 +42,7 @@ proxies:
     public-key: tLWqTzKtCCMxxOzSskvSwDB2an1bxxZ706kcNDqGNWg
     short-id: 50ace5ab34f6df9b
   servername: de2.dzvn.space
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
