@@ -20,24 +20,8 @@
       "password": "HAVAdE3nXhqA5nHp"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
-      "server": "185.135.86.175",
-      "server_port": 9094,
-      "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
-      "server": "185.135.86.175",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
       "server": "31.57.28.147",
       "server_port": 443,
       "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
@@ -54,6 +38,34 @@
           "public_key": "d7yg69dK4DkaV1EPpQcgd4GBncMN9u1o1Nk9u-i7wGc",
           "short_id": "7a18a196e730e1d5"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+      "server": "latvia-3.kochvpn.pw",
+      "server_port": 443,
+      "uuid": "8de0e6f4-d365-fa64-d5ba-eed9ea513e06",
+      "tls": {
+        "enabled": true,
+        "server_name": "latvia-3.kochvpn.pw",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/ws"
       }
     },
     {
