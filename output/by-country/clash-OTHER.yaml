@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
-  server: 172.67.209.13
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.18.13.71
   port: 443
   udp: true
   type: vless
-  uuid: fa45096d-bed0-ad80-c773-23c30000001b
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
   tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  servername: server9.9966338.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /imnotarealherox
     headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
