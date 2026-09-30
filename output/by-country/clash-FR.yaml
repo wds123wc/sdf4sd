@@ -5,75 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaohe
-  server: 172.67.201.231
-  port: 443
-  udp: true
-  type: trojan
-  password: 7a657573-a2be-8079-c204-93ad9047f088
-  sni: v5zbqbeguufs.ntkz7ofcma4sp2jzphvhad34v4n6adte.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/93ad9047f088
-- name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 35.181.166.40
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 35.181.166.40
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 03 - xiaohe
-  server: 104.21.85.39
-  port: 443
-  udp: true
-  type: trojan
-  password: 7a657573-a2be-8079-c204-93ad9047f088
-  sni: v5zbqbeguufs.ntkz7ofcma4sp2jzphvhad34v4n6adte.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/93ad9047f088
-- name: 🇫🇷 法国 (France) 04 - xiaohe
-  server: 172.64.150.28
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: 62.210.91.10
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 06 - xiaohe
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 07 - xiaohe
-  server: 62.210.147.2
-  port: 43115
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 - xiaohe
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -84,89 +15,11 @@ proxies:
     public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
     short-id: 2fed44d8c59f7e71
   servername: www.sony.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 09 - xiaohe
-  server: 62.210.91.2
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - xiaohe
-  server: 151.247.197.253
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 11 - xiaohe
-  server: 137.74.16.237
-  port: 443
-  udp: true
-  type: vless
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: b390e0a721d242b0
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 12 - xiaohe
-  server: vpn-fr-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 13 - xiaohe
-  server: 195.154.81.205
-  port: 15980
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: ad5e2de88283f5b915c25982e06bb45b
-- name: 🇫🇷 法国 (France) 14 - xiaohe
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 15 - xiaohe
-  server: fra.loozerp.wiki
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  servername: fra.loozerp.wiki
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 16 - xiaohe
-  server: 173.212.201.85
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.docker.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 17 - xiaohe
+- name: 🇫🇷 法国 (France) 02 - xiaohe
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -181,15 +34,41 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 18 - xiaohe
-  server: nl-irancell3.xelfona.ir
-  port: 49548
+- name: 🇫🇷 法国 (France) 03 - xiaohe
+  server: 62.210.91.10
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 04 - xiaohe
+  server: 62.210.91.2
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: ''
+- name: 🇫🇷 法国 (France) 05 - xiaohe
+  server: 51.255.13.232
+  port: 8388
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
-- name: 🇫🇷 法国 (France) 19 - xiaohe
-  server: 185.220.100.168
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  server: 212.183.88.136
   port: 443
   udp: true
   type: trojan
@@ -199,7 +78,49 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 20 - xiaohe
+- name: 🇫🇷 法国 (France) 07 - xiaohe
+  server: 35.181.166.40
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 35.181.166.40
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 08 - xiaohe
+  server: 173.212.201.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 09 - xiaohe
+  server: nasnet-162191099-direct.mbghalibaf.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: nasnet
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 10 - xiaohe
+  server: vpn-fr-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - xiaohe
+  server: nl-irancell3.xelfona.ir
+  port: 49548
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
+- name: 🇫🇷 法国 (France) 12 - xiaohe
   server: ewylr.smartorbitbox-bekhabdg.site
   port: 443
   udp: true
@@ -214,31 +135,8 @@ proxies:
     path: /tigerjoon
     headers:
       Host: ewylr.smartorbitbox-bekhabdg.site
-- name: 🇫🇷 法国 (France) 21 - xiaohe
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 22 - xiaohe
-  server: 88.216.69.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-4d64f1370eeb
-  tls: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/4d64f1370eeb/loc-0
-    headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
-- name: 🇫🇷 法国 (France) 23 - xiaohe
-  server: 172.67.185.98
+- name: 🇫🇷 法国 (France) 13 - xiaohe
+  server: 104.21.84.30
   port: 2053
   udp: true
   type: vless
@@ -252,6 +150,27 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 14 - xiaohe
+  server: 137.74.16.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 15 - xiaohe
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -272,14 +191,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 13 - xiaohe
   - 🇫🇷 法国 (France) 14 - xiaohe
   - 🇫🇷 法国 (France) 15 - xiaohe
-  - 🇫🇷 法国 (France) 16 - xiaohe
-  - 🇫🇷 法国 (France) 17 - xiaohe
-  - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
-  - 🇫🇷 法国 (France) 20 - xiaohe
-  - 🇫🇷 法国 (France) 21 - xiaohe
-  - 🇫🇷 法国 (France) 22 - xiaohe
-  - 🇫🇷 法国 (France) 23 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -300,13 +211,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 13 - xiaohe
   - 🇫🇷 法国 (France) 14 - xiaohe
   - 🇫🇷 法国 (France) 15 - xiaohe
-  - 🇫🇷 法国 (France) 16 - xiaohe
-  - 🇫🇷 法国 (France) 17 - xiaohe
-  - 🇫🇷 法国 (France) 18 - xiaohe
-  - 🇫🇷 法国 (France) 19 - xiaohe
-  - 🇫🇷 法国 (France) 20 - xiaohe
-  - 🇫🇷 法国 (France) 21 - xiaohe
-  - 🇫🇷 法国 (France) 22 - xiaohe
-  - 🇫🇷 法国 (France) 23 - xiaohe
 rules:
 - MATCH,PROXIES

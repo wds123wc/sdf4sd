@@ -18,34 +18,21 @@ proxies:
   servername: google.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 65.109.199.174
-  port: 443
+  server: 2.27.13.61
+  port: 2096
   udp: true
   type: vless
-  uuid: 3ba22938-7323-48ef-a981-7092171dc60e
-  flow: xtls-rprx-vision
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
   tls: true
-  reality-opts:
-    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
-    short-id: 7a0300af51a1c4cf
-  servername: Miro.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 84.22.150.239
-  port: 444
-  udp: true
-  type: vless
-  uuid: dc83276f-268a-4b18-9f63-63c73e11ffd8
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  servername: st6dbbc.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /cdn/v3/live
     headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+      Host: st6dbbc.rumedia-cdn.com
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 89.125.114.9
   port: 443
   udp: true
@@ -58,6 +45,19 @@ proxies:
     short-id: 67a4fe46bbf783cc
   servername: ozone.nl
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 65.109.199.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3ba22938-7323-48ef-a981-7092171dc60e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
+    short-id: 7a0300af51a1c4cf
+  servername: Miro.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

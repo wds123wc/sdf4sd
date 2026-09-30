@@ -13,6 +13,14 @@ proxies:
   sni: 160.187.100.109
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
+  server: 165.154.195.38
+  port: 35034
+  udp: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 35.201.181.122
   port: 443
   udp: true
@@ -23,15 +31,15 @@ proxies:
     public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
     short-id: 32f66f37df3f58d2
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
-  server: 165.154.195.38
-  port: 35034
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
+  server: 103.115.109.49
+  port: 443
   udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +48,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +57,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
 rules:
 - MATCH,PROXIES
