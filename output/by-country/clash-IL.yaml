@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇱 以色列 (Israel) 01 - xiaohe
-  server: 185.95.231.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
-    short-id: a1b2c3d4
-  servername: store.steampowered.com
-  client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 02 - xiaohe
   server: 185.95.231.156
   port: 443
   udp: true
@@ -30,19 +17,26 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 03 - xiaohe
-  server: 72.4.65.116
+- name: 🇮🇱 以色列 (Israel) 02 - xiaohe
+  server: 185.95.231.233
   port: 443
   udp: true
   type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  flow: xtls-rprx-vision
   tls: true
-  servername: assets-de2.pleiades.codes
-  skip-cert-verify: false
+  reality-opts:
+    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
+    short-id: a1b2c3d4
+  servername: store.steampowered.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
+- name: 🇮🇱 以色列 (Israel) 03 - xiaohe
+  server: 31.57.185.82
+  port: 23114
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: vS/2+E2vOG1C68QgmugNLDAxJqtGQeIJVI8lUu20n9Y=
 proxy-groups:
 - name: PROXIES
   type: select
