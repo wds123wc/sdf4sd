@@ -18,14 +18,6 @@ proxies:
   servername: github.com
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: china.letsconnectpoint.com
   port: 443
   udp: true
@@ -38,6 +30,14 @@ proxies:
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
   client-fingerprint: random
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
