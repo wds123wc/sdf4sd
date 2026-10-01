@@ -25,8 +25,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
+      "server": "ie.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "ie.tronsg.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe",
       "server": "50.7.5.164",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -50,7 +62,8 @@
       "outbounds": [
         "auto",
         "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
+        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe"
       ]
     },
     {
@@ -58,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇪 爱尔兰 (Ireland) 01 - xiaohe",
-        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe"
+        "🇮🇪 爱尔兰 (Ireland) 02 - xiaohe",
+        "🇮🇪 爱尔兰 (Ireland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

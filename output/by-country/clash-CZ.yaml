@@ -5,16 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 153.76.185.163
-  port: 3090
-  udp: true
-  type: vless
-  uuid: ea723504-e8df-4f23-b35f-c93961d5128a
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 194.87.59.29
+  server: 194.87.59.5
   port: 2085
   udp: true
   type: vless
@@ -22,8 +13,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 153.76.185.108
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 14e227c3-5a83-4b4d-a41a-e5f499c79415
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 153.76.185.162
+  server: 153.76.185.159
   port: 3090
   udp: true
   type: vless
@@ -32,6 +32,33 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  server: 194.87.59.29
+  port: 2085
+  udp: true
+  type: vless
+  uuid: ea723504-e8df-4f23-b35f-c93961d5128a
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
+  server: 194.87.59.20
+  port: 2085
+  udp: true
+  type: vless
+  uuid: a641fd38-0ad7-40bf-9a56-6715c1787be3
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 06 - xiaohe
+  server: 153.76.185.162
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ea723504-e8df-4f23-b35f-c93961d5128a
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 07 - xiaohe
   server: 195.133.66.229
   port: 443
   udp: true
@@ -41,10 +68,19 @@ proxies:
   reality-opts:
     public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
   servername: nlll.gaz-service.shop
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
+- name: 🇨🇿 捷克 (Czech) 08 - xiaohe
+  server: 153.76.185.163
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ea723504-e8df-4f23-b35f-c93961d5128a
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +90,10 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
   - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
+  - 🇨🇿 捷克 (Czech) 06 - xiaohe
+  - 🇨🇿 捷克 (Czech) 07 - xiaohe
+  - 🇨🇿 捷克 (Czech) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +103,9 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
   - 🇨🇿 捷克 (Czech) 04 - xiaohe
+  - 🇨🇿 捷克 (Czech) 05 - xiaohe
+  - 🇨🇿 捷克 (Czech) 06 - xiaohe
+  - 🇨🇿 捷克 (Czech) 07 - xiaohe
+  - 🇨🇿 捷克 (Czech) 08 - xiaohe
 rules:
 - MATCH,PROXIES
