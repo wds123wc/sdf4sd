@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 77.72.85.246
   port: 8443
@@ -30,13 +30,18 @@ proxies:
     headers:
       Host: fdghyt.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 109.206.241.10
-  port: 449
+  server: 5.181.202.58
+  port: 443
   udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
+  type: vless
+  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  servername: eston3.o4ka-internet.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
