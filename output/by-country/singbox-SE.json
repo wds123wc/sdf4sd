@@ -27,6 +27,22 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
+      "server": "172.234.97.206",
+      "server_port": 8443,
+      "uuid": "9cdcec15-2c73-40d5-b50f-d00381fddd26",
+      "tls": {
+        "enabled": true,
+        "server_name": "stsr.hospitaldt.ir",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
       "server": "144.31.235.214",
       "server_port": 443,
       "uuid": "8f6e49e6-7f03-4f10-9da9-1716158d80ed",
@@ -42,27 +58,6 @@
           "enabled": true,
           "public_key": "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8",
           "short_id": "5629431325884ff0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaohe",
-      "server": "177.3.209.165",
-      "server_port": 443,
-      "uuid": "a5dd2dd9-0995-449e-be67-4a409890dc42",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "owkd.pashalloh.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mYtQrGiR9EkOpUsvsI7E18AWnFZZqfOPXUdpzE3luz8",
-          "short_id": "da4d87fa"
         }
       }
     },
