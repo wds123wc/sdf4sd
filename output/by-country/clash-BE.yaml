@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
-  server: 104.21.50.89
+- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  server: 172.67.209.13
   port: 443
   udp: true
   type: vless
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  uuid: fa45096d-bed0-ad80-c773-23c30000001b
   tls: true
-  servername: geo.shkola112.site
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /api-vless
+    path: /
     headers:
-      Host: geo.shkola112.site
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
 rules:
 - MATCH,PROXIES
