@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 45.205.26.194
-  port: 443
-  udp: true
-  type: trojan
-  password: 53210e66-b1a6-484d-85e9-4e0e8432c47c
-  sni: node5.luoye.ee
-  skip-cert-verify: false
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 45.205.27.78
-  port: 10443
-  udp: true
-  type: trojan
-  password: 4de28cca-46cf-4c1d-b843-1c4b974cc6b7
-  sni: 45.205.27.78
-  skip-cert-verify: true
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
   server: 45.207.207.25
   port: 443
   udp: true
@@ -33,15 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
 rules:
 - MATCH,PROXIES
