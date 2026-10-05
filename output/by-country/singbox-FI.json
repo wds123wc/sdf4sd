@@ -20,36 +20,7 @@
       "tls": {
         "enabled": true,
         "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "45.149.114.171",
-      "server_port": 777,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaohe",
-      "server": "131.123.13.93",
-      "server_port": 443,
-      "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "1mcfn.67resserv67.info",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA",
-          "short_id": "29455a3a790acbd0"
-        }
+        "insecure": false
       }
     },
     {
@@ -58,9 +29,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ]
     },
     {
@@ -68,9 +37,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 04 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

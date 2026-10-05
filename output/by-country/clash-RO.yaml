@@ -13,7 +13,7 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 162.249.127.135
+  server: 162.249.127.144
   port: 8443
   udp: true
   type: hysteria2
@@ -39,14 +39,6 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
-  server: 38.180.35.145
-  port: 443
-  udp: true
-  type: trojan
-  password: 600421cf-11d7-429f-a65b-c30397f1bc03
-  sni: bu2.freeguard.org
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
   server: bl3fk52.sysopnova.art
   port: 443
   udp: true
@@ -59,14 +51,13 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: ''
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
-  server: 185.156.44.99
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: vk.com
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,7 +69,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,6 +80,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaohe
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 07 - xiaohe
 rules:
 - MATCH,PROXIES
