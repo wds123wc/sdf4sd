@@ -5,7 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: 89.39.161.157
+  server: brb.nnpy.org
+  port: 11100
+  udp: true
+  type: hysteria2
+  password: df8d55f9-fb51-442d-902a-bf8160dc051b
+  sni: brb.nnpy.org
+  skip-cert-verify: true
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  server: aksai.org
   port: 443
   udp: true
   type: vmess
@@ -26,11 +34,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
 rules:
 - MATCH,PROXIES
