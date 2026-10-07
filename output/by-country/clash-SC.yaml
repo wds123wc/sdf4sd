@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 45.207.207.25
-  port: 443
+  server: 45.205.27.78
+  port: 10443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+  type: trojan
+  password: dd65d47d-d31f-4407-9cac-89e20f1b816d
+  sni: 45.205.27.78
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
