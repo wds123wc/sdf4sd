@@ -9,7 +9,7 @@ proxies:
   port: 10443
   udp: true
   type: trojan
-  password: dd65d47d-d31f-4407-9cac-89e20f1b816d
+  password: f980c10a-6c40-4c3e-8879-ef6d9ba6d453
   sni: 45.205.27.78
   skip-cert-verify: true
 proxy-groups:
