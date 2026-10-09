@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe",
-      "server": "31.129.22.141",
-      "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "server": "89.125.96.76",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "pt-root.sworkingvpn.com",
+        "server_name": "wss.zazazuza.ru",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "wss.zazazuza.ru"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

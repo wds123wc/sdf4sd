@@ -16,7 +16,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 216.173.71.43
   port: 443

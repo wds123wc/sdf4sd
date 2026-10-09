@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -25,7 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
       "server": "144.31.27.215",
       "server_port": 43000,
       "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
@@ -50,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ]
     },
     {
@@ -58,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
