@@ -16,7 +16,7 @@ proxies:
     public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
     short-id: 9c3c0f8ec8b4af12
   servername: www.lamer.com.sg
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
