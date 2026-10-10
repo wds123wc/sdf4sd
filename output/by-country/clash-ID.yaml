@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: dghk2610.supertoolify.com
+  server: 154.21.203.106
   port: 46984
   udp: true
   type: vless
@@ -16,7 +16,7 @@ proxies:
     public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
     short-id: 9c3c0f8ec8b4af12
   servername: www.lamer.com.sg
-  client-fingerprint: ios
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
