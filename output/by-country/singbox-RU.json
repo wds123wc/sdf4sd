@@ -62,58 +62,92 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
+      "server": "94.198.54.132",
+      "server_port": 443,
+      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
+      "tls": {
+        "enabled": true,
+        "server_name": "msk.frkn.org",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
+      "server": "153.80.241.206",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
+      "server": "91.215.43.248",
+      "server_port": 443,
+      "uuid": "a5893c8b-28a2-4947-9a1c-708db25506c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "my.kempekl.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae",
+        "headers": {
+          "Host": "my.kempekl.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - xiaohe",
       "server": "139.28.168.126",
       "server_port": 8080,
       "password": "we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx",
       "tls": {
         "enabled": true,
         "server_name": "hopp-honkong-new.roxa.org",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-      "server": "93.188.184.150",
-      "server_port": 443,
-      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru-1-2.unturned-rust-dead.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ru-api"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
-      "server": "87.242.95.77",
-      "server_port": 7444,
-      "uuid": "0a48813f-7258-4e0c-b498-0750f5fdbd2c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "novosrv.raw-srv.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PZajgWT2dtEu0Avc2QWiZELK9wDQW9p9vvcckfQBfCE",
-          "short_id": "632cd48001bdb09a"
-        }
+        "insecure": true
       }
     },
     {
@@ -126,7 +160,9 @@
         "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 06 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 08 - xiaohe"
       ]
     },
     {
@@ -138,7 +174,9 @@
         "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 06 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 06 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

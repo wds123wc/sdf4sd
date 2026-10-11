@@ -41,40 +41,62 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 94.198.54.132
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 153.80.241.206
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 91.215.43.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  tls: true
+  servername: my.kempekl.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   server: 139.28.168.126
   port: 8080
   udp: true
   type: hysteria2
   password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
   sni: hopp-honkong-new.roxa.org
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 93.188.184.150
-  port: 443
-  udp: true
-  type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  tls: true
-  reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ru-1-2.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ru-api
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 87.242.95.77
-  port: 7444
-  udp: true
-  type: vless
-  uuid: 0a48813f-7258-4e0c-b498-0750f5fdbd2c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PZajgWT2dtEu0Avc2QWiZELK9wDQW9p9vvcckfQBfCE
-    short-id: 632cd48001bdb09a
-  servername: novosrv.raw-srv.org
-  client-fingerprint: random
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +108,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +121,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
 rules:
 - MATCH,PROXIES

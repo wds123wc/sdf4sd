@@ -28,9 +28,29 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "172.67.176.3",
+      "server": "best.valaiqm.ir",
+      "server_port": 3035,
+      "uuid": "a1fb63f7-a942-4010-a830-bc395703a9a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "telewebion.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Pi3B8-R1-lj8ScFPOTRRER709y9hJ0varDPpMzWhtAo",
+          "short_id": "f2fda64d24c4"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
+      "server": "104.21.48.18",
       "server_port": 2053,
       "password": "e309e031-991e-4656-9934-44d10deb8fd8",
       "tls": {
@@ -59,7 +79,8 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
       ]
     },
     {
@@ -67,7 +88,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

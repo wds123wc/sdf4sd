@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: spainspeedboostjbl88.qcloud.surf
-  port: 27313
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
   type: hysteria2
-  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-  sni: spainspeedboostjbl88.qcloud.surf
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

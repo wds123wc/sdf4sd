@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: 154.21.203.106
-  port: 46984
+  server: 103.172.197.3
+  port: 16006
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
-    short-id: 9c3c0f8ec8b4af12
-  servername: www.lamer.com.sg
-  client-fingerprint: firefox
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
