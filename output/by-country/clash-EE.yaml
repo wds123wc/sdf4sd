@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 185.209.15.100
-  port: 443
-  udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM
-    short-id: c334408a1056aaf8
-  servername: n1.vimeostream.online
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 178.214.113.10
   port: 8443
   udp: true
@@ -30,26 +17,33 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: nl1grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: 13.143.239.75
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 178.214.110.4
   port: 443
   udp: true
   type: vless
-  uuid: fc87e0d6-0f6a-423a-828e-1fed7e7ef29c
+  uuid: b118fc0a-c535-11f1-9902-a337233c6cda
   flow: xtls-rprx-vision
   tls: true
-  servername: u5.luxcloud.space
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  reality-opts:
+    public-key: Zjex_cLrMyB7UKgGP8iUZaUtKWuDJnpylpf1WUcfOA0
+    short-id: 080c8affc0204b46
+  servername: nl-1.wizard.select
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 185.209.15.100
+  port: 443
+  udp: true
+  type: vless
+  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM
+    short-id: c334408a1056aaf8
+  servername: n1.vimeostream.online
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 185.209.15.100
   port: 8443
   udp: true
@@ -62,6 +56,16 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: nl1grpc
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   server: 185.31.242.61
   port: 443
@@ -84,24 +88,12 @@ proxies:
   tls: true
   servername: fdghyt.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
-  server: 87.242.95.164
-  port: 8444
-  udp: true
-  type: vless
-  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sEVENfWGiESvjQGk5I4MWGvOFpZHz8abDnh1jzALOA0
-    short-id: 1ededde9b458e0b3
-  servername: passport.yandex.ru
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,7 +106,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -127,6 +118,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe
 rules:
 - MATCH,PROXIES

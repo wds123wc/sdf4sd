@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "185.209.15.100",
-      "server_port": 443,
-      "uuid": "c6db98c5-9959-425e-9340-300779fc4e4b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "n1.vimeostream.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM",
-          "short_id": "c334408a1056aaf8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
       "server": "178.214.113.10",
       "server_port": 8443,
       "uuid": "c6db98c5-9959-425e-9340-300779fc4e4b",
@@ -46,36 +25,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+      "server": "178.214.110.4",
+      "server_port": 443,
+      "uuid": "b118fc0a-c535-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+        "server_name": "nl-1.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Zjex_cLrMyB7UKgGP8iUZaUtKWuDJnpylpf1WUcfOA0",
+          "short_id": "080c8affc0204b46"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+      "server": "185.209.15.100",
+      "server_port": 443,
+      "uuid": "c6db98c5-9959-425e-9340-300779fc4e4b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "n1.vimeostream.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kK2a0QSYg0XQIMQOvDI7lJJvJcMH0-52RB90FivhVmM",
+          "short_id": "c334408a1056aaf8"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
-      "server": "13.143.239.75",
-      "server_port": 443,
-      "uuid": "fc87e0d6-0f6a-423a-828e-1fed7e7ef29c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "u5.luxcloud.space",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
       "server": "185.209.15.100",
       "server_port": 8443,
       "uuid": "c6db98c5-9959-425e-9340-300779fc4e4b",
@@ -94,6 +86,22 @@
       "transport": {
         "type": "grpc",
         "service_name": "nl1grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -126,34 +134,20 @@
       "tls": {
         "enabled": true,
         "server_name": "fdghyt.com",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/vpn-wss/fluxor/59011/",
         "headers": {
           "Host": "fdghyt.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe",
-      "server": "87.242.95.164",
-      "server_port": 8444,
-      "uuid": "accfae78-b31c-47cb-86a1-bb9a07973e4a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sEVENfWGiESvjQGk5I4MWGvOFpZHz8abDnh1jzALOA0",
-          "short_id": "1ededde9b458e0b3"
         }
       }
     },
@@ -168,8 +162,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe"
       ]
     },
     {
@@ -182,8 +175,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
