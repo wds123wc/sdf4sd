@@ -4,26 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe
-  server: 80.243.228.84
-  port: 2085
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: fe33cc59-c464-4e60-9aff-2793793317bf
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES

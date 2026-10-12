@@ -12,34 +12,37 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 85.209.129.5
-  port: 443
+  server: 185.103.110.68
+  port: 18283
   udp: true
-  type: trojan
-  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
-  sni: fl.global-cdn.org
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 2.26.55.163
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: 65.108.3.59
   port: 443
   udp: true
   type: vless
-  uuid: 621bcb9e-7df5-427b-a9d4-6e87223c8bca
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw
-  servername: specific3.kandnet.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 170.168.4.59
   port: 17170
@@ -54,24 +57,29 @@ proxies:
   grpc-opts:
     grpc-service-name: trail-grpc
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 95.216.27.15
-  port: 2053
+  server: 85.209.129.5
+  port: 443
+  udp: true
+  type: trojan
+  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
+  sni: fl.global-cdn.org
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ajv
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: ir4.mobileemdad.top
+  port: 443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 4bab42ab-6370-45d1-86a3-69d2b58cd12c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: 45.149.114.171
-  port: 777
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
+    short-id: 9ed2fa
+  servername: nobitex.ir
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

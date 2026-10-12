@@ -22,26 +22,6 @@
     {
       "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 03 - xiaohe",
-      "server": "34.35.186.228",
-      "server_port": 443,
-      "uuid": "8d65c8a7-4876-4556-bb6a-feccfb46ee81",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE",
-          "short_id": "89b3a20484eb43ec"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 04 - xiaohe",
       "server": "34.35.189.111",
       "server_port": 443,
       "uuid": "4758aee6-6d1a-4306-b460-2398b5af4e35",
@@ -50,7 +30,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -58,6 +38,14 @@
           "short_id": "5ced03e42cc31aab"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 04 - xiaohe",
+      "server": "139.84.247.164",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tfAcRikawhNoZAhu"
     },
     {
       "type": "selector",
