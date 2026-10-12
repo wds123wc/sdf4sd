@@ -19,6 +19,14 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -30,7 +38,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 65.108.3.59
   port: 443
   udp: true
@@ -43,7 +51,7 @@ proxies:
     short-id: 90ec9bba2019
   servername: web.eitaa.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
   server: 170.168.4.59
   port: 17170
   udp: true
@@ -56,30 +64,12 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trail-grpc
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 85.209.129.5
-  port: 443
-  udp: true
-  type: trojan
-  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
-  sni: fl.global-cdn.org
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ajv
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
-  server: ir4.mobileemdad.top
-  port: 443
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
   type: vless
-  uuid: 4bab42ab-6370-45d1-86a3-69d2b58cd12c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
-    short-id: 9ed2fa
-  servername: nobitex.ir
-  client-fingerprint: firefox
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 proxy-groups:
 - name: PROXIES
   type: select
