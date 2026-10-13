@@ -13,7 +13,6 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 93.123.39.84
   port: 443
@@ -23,7 +22,6 @@ proxies:
   tls: true
   servername: ee2x.global-cdn.org
   skip-cert-verify: false
-  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: content.v1.Feed
