@@ -13,18 +13,33 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 93.123.39.84
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5298d5c5-0633-4989-95c8-68ee13cd507e
+  tls: true
+  servername: ee2x.global-cdn.org
+  skip-cert-verify: false
   client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: content.v1.Feed
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

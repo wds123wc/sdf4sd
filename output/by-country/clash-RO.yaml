@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
   server: 162.249.125.133
   port: 443
   udp: true
@@ -14,28 +21,19 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 194.68.44.42
-  port: 64546
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 103.126.51.58
-  port: 995
+  server: 83.147.245.126
+  port: 443
   udp: true
   type: vless
-  uuid: 1fc575d3-81bb-44d5-9efa-4131c7cc677a
+  uuid: 0cf8e402-e801-4aeb-9b7a-00a933f9f1c1
+  flow: xtls-rprx-vision
   tls: true
-  servername: ocober-romania-new.yyuyy.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: gLO2GRqV0iVDmVdytcJLqGyZEB5Swxb-NAOC9AL13UM
+    short-id: 344f1f56582dda0f
+  servername: assets-str-53.nexus-infinitus.com
   client-fingerprint: random
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /api/v1
-    headers:
-      Host: ocober-romania-new.yyuyy.com
 proxy-groups:
 - name: PROXIES
   type: select
