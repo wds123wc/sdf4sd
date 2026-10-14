@@ -5,15 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
-  server: 51.77.225.200
-  port: 8388
+  server: 146.70.61.18
+  port: 8080
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   server: 149.102.132.184
-  port: 80
+  port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
@@ -26,99 +26,6 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
-  server: 149.102.132.184
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  server: 45.141.118.213
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga16.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
-  server: 146.70.61.18
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
-  server: 206.245.166.173
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga19.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
-  server: 206.245.166.203
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga20.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
-  server: 186.190.211.188
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 186.190.211.188
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
-  server: 45.141.118.49
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lagad17.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: viber.com
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
-  server: 46.250.250.149
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   server: 23.81.34.204
   port: 443
   udp: true
@@ -131,18 +38,78 @@ proxies:
     short-id: b19b017d6f453873
   servername: speed.cloudflare.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
-  server: laga18.api3-max.ru
+- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  server: 146.70.61.37
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+  server: 146.70.104.235
   port: 443
   udp: true
   type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  uuid: 698922a2-1ca5-4bfb-92fb-0aa7e779ce21
   flow: xtls-rprx-vision
   tls: true
-  servername: laga18.api3-max.ru
-  skip-cert-verify: false
+  reality-opts:
+    public-key: FcvI0ncjwII1n6tnWQ6nLWuwRpk8hdYoYzYCi1sbhjY
+    short-id: 1c3ce7aa488b3e50
+  servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
+  server: 95.85.224.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -153,34 +120,15 @@ proxies:
     public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 16 - xiaohe
-  server: 109.248.169.195
-  port: 43000
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+  server: 94.156.250.148
+  port: 7001
   udp: true
-  type: vless
-  uuid: caed9423-a900-4704-9045-d207a8d4697b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0cVL3RpP9S7OYgQDyZMoV6n3LtrbDJ7DjjUk_0ZizWc
-    short-id: 445b41ed
-  servername: 109.248.169.195
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 17 - xiaohe
-  server: webdisk.jaggyslawa.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 87174b37ce3b
-  servername: www.microsoft.com
-  client-fingerprint: edge
-- name: 🇬🇧 英国 (United Kingdom) 18 - xiaohe
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   server: server.slavkiti.monster
   port: 443
   udp: true
@@ -193,13 +141,32 @@ proxies:
     short-id: 8325360e8bd2
   servername: www.foxsports.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 19 - xiaohe
-  server: 94.156.250.148
-  port: 7001
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
+  server: webdisk.jaggyslawa.org
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: vless
+  uuid: 75113671-63e3-452d-87d3-261a37e8b472
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: baf023e1026a
+  servername: www.mozilla.org
+  client-fingerprint: edge
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaohe
+  server: 109.248.169.195
+  port: 43000
+  udp: true
+  type: vless
+  uuid: caed9423-a900-4704-9045-d207a8d4697b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0cVL3RpP9S7OYgQDyZMoV6n3LtrbDJ7DjjUk_0ZizWc
+    short-id: 445b41ed
+  servername: 109.248.169.195
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -220,10 +187,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 15 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 16 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 17 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 18 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 19 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -244,9 +207,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 15 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 16 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 17 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 18 - xiaohe
-  - 🇬🇧 英国 (United Kingdom) 19 - xiaohe
 rules:
 - MATCH,PROXIES

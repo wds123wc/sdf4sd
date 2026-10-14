@@ -5,26 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaohe",
-      "server": "193.233.253.180",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
       }
     },
     {
@@ -32,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

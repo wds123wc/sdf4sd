@@ -4,15 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "server": "in.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "in.tronsg.com",
+        "insecure": true
       }
     },
     {
@@ -26,7 +26,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -36,15 +36,18 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "in.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "in.tronsg.com",
-        "insecure": true
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "152.67.8.205"
+        }
       }
     },
     {

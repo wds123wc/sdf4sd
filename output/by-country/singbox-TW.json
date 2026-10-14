@@ -4,28 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
-      "server": "160.187.100.109",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "https://t.me/wangcai2",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -43,13 +35,46 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+      "server": "fujrdt.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "fujrdt.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "fujrdt.d6f54hd1j.cc"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
       ]
     },
     {
@@ -58,7 +83,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
