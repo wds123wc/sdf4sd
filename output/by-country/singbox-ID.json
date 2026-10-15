@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇪 秘鲁 (Peru) 01 - xiaohe",
-      "server": "172.65.90.41",
-      "server_port": 2053,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "103.172.197.3",
+      "server_port": 16006,
+      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlNSSwUEURwBVwcWUQYJGxsPQldGTQ8OBgJWFUU=",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU",
+          "short_id": ""
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇪 秘鲁 (Peru) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇪 秘鲁 (Peru) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
