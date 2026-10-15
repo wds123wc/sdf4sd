@@ -16,7 +16,11 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "fujrdt.d6f54hd1j.cc"
+        }
       }
     },
     {
