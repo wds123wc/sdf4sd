@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
+  server: se1.h1cloud.net
+  port: 26128
+  udp: true
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
+    short-id: 13ac4d3bdadf1ea1
+  servername: www.icloud.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: df50147201bf
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 88.216.223.66
   port: 443
   udp: true
@@ -15,18 +30,7 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: 868419504747f6de
   servername: tcpswed1.figurapn.ru
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 62.60.159.81
   port: 2053
@@ -43,7 +47,26 @@ proxies:
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 193.27.200.200
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  server: hy-se.bypassme.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
+  sni: hy-se.bypassme.online
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: swe.wizard.select
   port: 443
   udp: true
   type: vless
@@ -54,22 +77,7 @@ proxies:
     public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
     short-id: 3b20e438da99
   servername: swe.wizard.select
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: se1.h1cloud.net
-  port: 26226
-  udp: true
-  type: vless
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  tls: true
-  reality-opts:
-    public-key: zsSr4H-YgykAOYdIYFaAnFQtIguRhP825FodeKSoxjA
-    short-id: 2ddf3f1151012c98
-  servername: www.dn.se
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 69effd3120f4
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,6 +88,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,5 +99,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
 rules:
 - MATCH,PROXIES

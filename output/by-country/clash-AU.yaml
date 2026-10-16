@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: uk3-2.998998.best
+- name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  server: 172.67.195.146
   port: 443
   udp: true
   type: vmess
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
   alterId: 0
   cipher: auto
   tls: true
-  servername: server22.9966338.xyz
+  servername: aus.lovehk.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /serhrdftshg
+    path: /Sydney3
     headers:
-      Host: server22.9966338.xyz
+      Host: aus.lovehk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
 rules:
 - MATCH,PROXIES

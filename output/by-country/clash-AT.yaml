@@ -24,12 +24,6 @@ proxies:
     short-id: a8
   servername: api.mediapereval.cc
   client-fingerprint: qq
-- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  server: 138.124.90.177
-  port: 10443
-  udp: true
-  type: vless
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
 rules:
 - MATCH,PROXIES
