@@ -11,7 +11,18 @@ proxies:
   type: vless
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
-  server: hydra.yokkastars.com
+  server: 5.253.29.254
+  port: 14430
+  udp: true
+  type: vless
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  server: 5.253.28.240
   port: 2443
   udp: true
   type: vless
@@ -21,12 +32,12 @@ proxies:
     public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
     short-id: 92c32de179e5d908
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
-  server: hydra.yokkastars.com
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
+  server: 5.253.28.240
   port: 40443
   udp: true
   type: vless
@@ -46,6 +57,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +66,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe
 rules:
 - MATCH,PROXIES
