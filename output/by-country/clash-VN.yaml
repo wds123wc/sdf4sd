@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
-  server: freede.aiage.work
-  port: 443
+- name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
+  server: funagfrdfs.alixxplay.com
+  port: 55688
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
-    short-id: 5f5e74dfd296b28d
-  servername: freede.aiage.work
+    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
+    short-id: a46bb5972cf50671
+  servername: bilibili-vn.biliimg.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
+  - 🇻🇳 越南 (Vietnam) 01 - xiaohe
 rules:
 - MATCH,PROXIES

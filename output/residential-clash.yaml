@@ -5,11 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
+  server: 206.1.102.64
+  port: 2095
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: vmess
+  uuid: f895d952-81c4-4810-88f0-89b21b9df3f6
+  alterId: 0
+  cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: hinet1.2yly.com
   port: 24215
@@ -21,6 +23,12 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
@@ -28,6 +36,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -35,5 +44,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
