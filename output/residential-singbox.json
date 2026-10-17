@@ -4,39 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-      "server": "206.1.102.64",
-      "server_port": 2095,
-      "uuid": "f895d952-81c4-4810-88f0-89b21b9df3f6",
-      "security": "auto"
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - xiaohe",
+      "server": "tw0.zhujue.us",
+      "server_port": 11000,
+      "uuid": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "s0.awsstatic.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "public_key": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
           "short_id": ""
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
@@ -44,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - xiaohe"
       ]
     },
     {
@@ -53,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

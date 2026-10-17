@@ -23,7 +23,7 @@ proxies:
     public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
     short-id: a8
   servername: api.mediakaskad.cc
-  client-fingerprint: ios
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
