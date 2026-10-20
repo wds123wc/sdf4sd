@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -30,19 +19,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: edge-lab-b.10media.top
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 94.143.231.146
   port: 443
   udp: true
   type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   tls: true
-  servername: edge-lab-b.10media.top
+  servername: sub.merky.top
   skip-cert-verify: false
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: swedenfeed
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES

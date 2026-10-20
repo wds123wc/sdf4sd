@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -31,8 +31,7 @@
       "server_port": 443,
       "uuid": "2e2e204a-7e61-48fb-8182-5955821e8da0",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {
