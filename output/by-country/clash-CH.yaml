@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
+  sni: 140.238.213.114
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 45.90.59.15
@@ -26,16 +26,12 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
-  server: 185.18.250.245
-  port: 443
+  server: 132.243.175.144
+  port: 8388
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 proxy-groups:
 - name: PROXIES
   type: select
