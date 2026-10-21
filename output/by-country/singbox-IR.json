@@ -5,21 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇮🇷 IR 01 - xiaohe",
+      "server": "tun.centeriran.shop",
+      "server_port": 443,
+      "uuid": "041b2265-0d0a-4290-9439-25b6a0e15b6e",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "2sdfsxc.centeriran.shop",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "tun.centeriran.shop"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇮🇷 IR 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇮🇷 IR 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
