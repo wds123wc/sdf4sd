@@ -4,28 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "144.31.34.146",
-      "server_port": 2096,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "server": "9641684.sdf65h4.top",
+      "server_port": 443,
+      "uuid": "250c015d-bab0-4ed3-b638-b4eda48f5840",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "fi1.merky.one",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "9641684.sdf65h4.top",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/mky-ws-4f19c8a7",
+        "path": "/",
         "headers": {
-          "Host": "fi1.merky.one"
+          "Host": "9641684.sdf65h4.top"
         }
       }
     },
@@ -34,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
