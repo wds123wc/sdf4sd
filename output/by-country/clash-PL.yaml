@@ -5,14 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 31.133.0.186
+  server: pl2.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: pl2.dedushka.top
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 92.118.150.146
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: pl1.dedushka.top
   port: 443
   udp: true
@@ -20,13 +28,26 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: pl1.dedushka.top
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: 144.31.0.140
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: api.sakhalin.fyi
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -39,43 +60,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 144.31.0.140
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-    short-id: 7271129440ade8fa
-  servername: api.sakhalin.fyi
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: 201.10.91.20
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3acb386b-fdd7-4bc9-911f-159fdcd834ce
-  tls: true
-  reality-opts:
-    public-key: 8pz2ja5pjpfnY-ZVymqkB8YmWnI6pkca4CKapBhA1XI
-    short-id: f61a8e2fcf7222a6
-  servername: a4d9acg.plp1.h1cloud.net
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ce30fc556a31
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 2.26.225.89
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,7 +71,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +82,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
-  - 🇵🇱 波兰 (Poland) 07 - xiaohe
 rules:
 - MATCH,PROXIES

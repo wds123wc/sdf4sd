@@ -17,14 +17,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 13.140.56.100
-  port: 14430
+  server: 165.99.222.161
+  port: 443
   udp: true
   type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
+  servername: in1.vkusnews.com
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 152.67.8.205
   port: 80
@@ -39,17 +42,16 @@ proxies:
     headers:
       Host: in-152.67.8.205-0250
 - name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 165.99.222.161
-  port: 443
+  server: 13.140.56.100
+  port: 14430
   udp: true
   type: vless
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
-  servername: in1.vkusnews.com
-  client-fingerprint: firefox
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 proxy-groups:
 - name: PROXIES
   type: select
