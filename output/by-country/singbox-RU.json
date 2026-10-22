@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -35,7 +35,7 @@
         "server_name": "ozon.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -45,30 +45,12 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-      "server": "46.17.44.216",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe"
       ]
     },
     {
@@ -76,9 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

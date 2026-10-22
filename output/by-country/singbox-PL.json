@@ -12,45 +12,24 @@
       "tls": {
         "enabled": true,
         "server_name": "pl2.dedushka.top",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "31.133.0.182",
+      "server": "pl1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
         "server_name": "pl1.dedushka.top",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "144.31.0.140",
-      "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.sakhalin.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
-        }
+        "insecure": true
       }
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -70,8 +49,7 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe"
       ]
     },
     {
@@ -80,8 +58,7 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
