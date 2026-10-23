@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: finland02.azotvpn.xyz
   port: 8443
