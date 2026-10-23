@@ -1,0 +1,36 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  server: 193.148.19.212
+  port: 12796
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 905470106f6c49d68e90a5c55c020190
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  server: 108.181.71.5
+  port: 15995
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 882dd5b0e0f2cf05bb5de75f59bbe953
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
+rules:
+- MATCH,PROXIES
