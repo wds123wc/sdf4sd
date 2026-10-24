@@ -16,17 +16,13 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 194.61.31.126
-  port: 2053
+  server: in.tronsg.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: random
+  type: trojan
+  password: Trojan@82164024
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 03 - xiaohe
   server: in.smrtai.top
   port: 443
@@ -50,6 +46,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: in-152.67.8.205-0204
 proxy-groups:
 - name: PROXIES
   type: select
