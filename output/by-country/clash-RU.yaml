@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  server: 45.9.118.177
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 88c4ce99-31f1-4329-912d-2a3564b3d58b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 147.45.47.83
   port: 443
   udp: true
@@ -16,19 +28,20 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
   client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 193.223.104.124
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: 194.113.235.121
   port: 443
   udp: true
   type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  uuid: c5cf36f5-50e9-405b-adb4-b40fdf0d4619
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+    public-key: f2a5R8ubMtjmFDxUt1VtikDOmgPgVWBPzcZjOOJpYlc
+    short-id: 12f319370b60ec2f
+  servername: fr1-4v.zvcorp24.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 45.151.71.147
   port: 443
   udp: true
@@ -40,7 +53,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: abuse.ozon.ru
   client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 147.45.175.81
   port: 443
   udp: true
@@ -53,7 +66,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   server: xsru1.ddnsfree.com
   port: 443
   udp: true
@@ -66,18 +79,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 45.151.71.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ai.ozon.ru
-  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
