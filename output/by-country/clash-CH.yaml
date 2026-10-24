@@ -12,13 +12,19 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 140.238.213.114
-  port: 50160
+  server: 116.204.164.60
+  port: 7443
   udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 140.238.213.114
-  skip-cert-verify: true
+  type: vless
+  uuid: fc85cf23-75e6-4b91-b468-8adc9407047b
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
