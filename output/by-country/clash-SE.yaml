@@ -13,20 +13,6 @@ proxies:
   sni: promo.betust.net
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: pl4-node.rumedia-cdn.com
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: stb6390.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stb6390.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 191.44.114.179
   port: 2096
   udp: true
@@ -48,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
 rules:
 - MATCH,PROXIES
