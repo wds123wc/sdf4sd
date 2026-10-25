@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "202.155.14.134",
-      "server_port": 55555,
-      "password": "78585441-c8b3-40fb-9b94-15edd312fdcf",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽) - xiaohe",
+      "server": "gu232.izzzzzi.com",
+      "server_port": 20052,
+      "password": "e56e752c86a640cd",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "gu232.izzzzzi.com",
         "insecure": true
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
