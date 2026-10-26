@@ -13,21 +13,13 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "77.232.135.141",
-      "server_port": 8445,
-      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
+      "server": "2.26.6.1",
+      "server_port": 2087,
+      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
       "tls": {
         "enabled": true,
-        "server_name": "ru1.radiolumens.uk",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "beru-pl"
+        "server_name": "2.26.6.1",
+        "insecure": false
       }
     },
     {
@@ -53,6 +45,49 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
+      "server": "tr2.soft10.ir",
+      "server_port": 2053,
+      "uuid": "480b4042-f713-43d7-b24b-b4064c97f841",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr2.soft10.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1",
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "tr2.soft10.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
+      "server": "77.232.135.141",
+      "server_port": 8445,
+      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru1.radiolumens.uk",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "beru-pl"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -60,7 +95,9 @@
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe"
+        "🇵🇱 波兰 (Poland) 04 - xiaohe",
+        "🇵🇱 波兰 (Poland) 05 - xiaohe",
+        "🇵🇱 波兰 (Poland) 06 - xiaohe"
       ]
     },
     {
@@ -70,7 +107,9 @@
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
         "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe"
+        "🇵🇱 波兰 (Poland) 04 - xiaohe",
+        "🇵🇱 波兰 (Poland) 05 - xiaohe",
+        "🇵🇱 波兰 (Poland) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
