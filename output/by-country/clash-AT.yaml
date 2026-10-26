@@ -41,6 +41,20 @@ proxies:
     path: /A11U
     headers:
       Host: au2.pad-service.com
+- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  server: 62.83.41.69
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au6.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /AU6W
+    headers:
+      Host: au6.pad-sservice.lat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +63,7 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,5 +72,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
 rules:
 - MATCH,PROXIES

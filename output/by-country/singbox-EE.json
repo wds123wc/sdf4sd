@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇳 CN 01 - xiaohe",
-      "server": "8.35.211.242",
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "141.0.187.15",
       "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "password": "70043bfa-d6fb-4980-b27e-773e9e8b2004",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
+        "server_name": "crt.onecloudstream.com",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
