@@ -4,8 +4,42 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
+      "server": "45.149.147.213",
+      "server_port": 4443,
+      "uuid": "9b347a9b-d7a6-4b51-9890-eff62b832834",
+      "tls": {
+        "enabled": true,
+        "server_name": "45-149-147-213.sslip.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "kobedin-server1-vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
       "server": "45.149.147.213",
       "server_port": 4444,
       "password": "9b347a9b-d7a6-4b51-9890-eff62b832834",
@@ -24,49 +58,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "kobedin-server1-trojan"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "45.149.147.213",
-      "server_port": 4443,
-      "uuid": "9b347a9b-d7a6-4b51-9890-eff62b832834",
-      "tls": {
-        "enabled": true,
-        "server_name": "45-149-147-213.sslip.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "kobedin-server1-vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "65.109.212.193",
-      "server_port": 465,
-      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw3.divarkhaghazi.com.",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hw3.divarkhaghazi.com."
-        }
       }
     },
     {
@@ -92,14 +83,22 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "server": "hw3.divarkhaghazi.com",
+      "server_port": 465,
+      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
+      "tls": {
+        "enabled": true,
+        "server_name": "hw3.divarkhaghazi.com.",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/",
         "headers": {
-          "Host": "45.144.234.157"
+          "Host": "hw3.divarkhaghazi.com."
         }
       }
     },
