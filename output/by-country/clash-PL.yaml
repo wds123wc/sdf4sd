@@ -30,16 +30,13 @@ proxies:
   servername: cloudflare.com
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: poland-new-new.failspace.top
+  server: 92.118.150.146
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-new.failspace.top
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 54.37.131.126
   port: 80
@@ -62,7 +59,6 @@ proxies:
   tls: true
   servername: 2.26.6.1
   skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
