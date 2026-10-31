@@ -16,6 +16,18 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 178.212.35.198
   port: 443
   udp: true
@@ -27,13 +39,6 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 139.84.166.47
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   server: in002.zestapp778.com
   port: 42733

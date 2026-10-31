@@ -20,6 +20,26 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
       "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -36,14 +56,6 @@
           "short_id": "6bdc8320"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "139.84.166.47",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "trojan",

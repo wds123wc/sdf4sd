@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 165.154.63.139
   port: 443
   udp: true
@@ -32,16 +16,24 @@ proxies:
     public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
     short-id: ca4aedd4
   servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: 202.146.222.29
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: 195.58.144.56
   port: 11907
   udp: true
@@ -51,6 +43,22 @@ proxies:
   servername: 195.58.144.56
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  server: euu1yAlfmcqvLJEx.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: euu1yAlfmcqvLJEx.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: euu1yAlfmcqvLJEx.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
