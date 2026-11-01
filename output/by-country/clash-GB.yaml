@@ -25,6 +25,25 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  server: 146.70.61.37
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  server: 23.81.36.148
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: ''
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -35,35 +54,19 @@ proxies:
     public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
     short-id: d051f678212f9d54
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  server: en001.zestapp778.com
-  port: 29813
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: en001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
-  server: 138.124.125.193
-  port: 10444
+  server: 46.250.250.149
+  port: 2053
   udp: true
   type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
-  flow: xtls-rprx-vision
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: random
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
   server: 191.44.108.31
   port: 443
@@ -85,32 +88,13 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
-  server: sql.popmintxo.cc
-  port: 43385
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   server: 98.98.142.161
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
-  server: 46.250.250.149
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   server: 51.38.71.147
   port: 8443
   udp: true
@@ -120,6 +104,35 @@ proxies:
   servername: node-uk.connectsuite.org
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+  server: ench-snet-app.w-ctrip.cn
+  port: 30298
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  server: ench-snet-app.w-ctrip.cn
+  port: 38963
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
+  server: 138.124.125.193
+  port: 10444
+  udp: true
+  type: vless
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,6 +151,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -156,5 +170,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 12 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
 rules:
 - MATCH,PROXIES
