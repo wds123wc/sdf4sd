@@ -31,7 +31,10 @@
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/vless"
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
       }
     },
     {
@@ -45,7 +48,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -86,7 +89,7 @@
       "tls": {
         "enabled": true,
         "server_name": "in002.zestapp778.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
