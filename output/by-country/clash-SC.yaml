@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  server: 185.193.29.123
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
   server: 45.207.207.25
   port: 443
   udp: true
@@ -17,11 +32,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 162.159.152.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rayan-007.maxima.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: forshynewh.duckdns.org
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -13,16 +36,17 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
-  server: 217.60.73.56
-  port: 443
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 84.235.244.108
+  port: 22573
   udp: true
-  type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 rules:
 - MATCH,PROXIES
