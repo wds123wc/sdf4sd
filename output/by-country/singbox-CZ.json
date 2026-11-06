@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "staging.lastilhame.monster",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "aded66f1-de12-4c3c-af9e-a21d6e7d9c96",
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.foxsports.com",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "2a80364e93d9"
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "ee1716767f9b"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

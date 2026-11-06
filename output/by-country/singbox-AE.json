@@ -43,10 +43,7 @@
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
+        "path": "/vless"
       }
     },
     {
@@ -64,6 +61,18 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
+      "server": "sclass-00.catcat321.com",
+      "server_port": 20123,
+      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -72,7 +81,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaohe"
       ]
     },
     {
@@ -83,7 +93,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
