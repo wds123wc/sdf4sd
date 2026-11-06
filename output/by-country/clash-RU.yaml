@@ -32,6 +32,14 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  server: steel7.hadsvpn.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  sni: steel7.hadsvpn.com
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 201.24.121.243
   port: 443
   udp: true
@@ -44,7 +52,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: xsru1.ddnsfree.com
   port: 443
   udp: true
@@ -57,14 +65,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: steel7.hadsvpn.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

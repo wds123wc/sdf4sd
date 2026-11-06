@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "server.slavkiti.monster",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
+      "server": "201.8.71.38",
       "server_port": 443,
-      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
-      "flow": "xtls-rprx-vision",
+      "uuid": "b7b8ee80-db83-4276-8c68-87dc88b0b0b5",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "71b840t.de7.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "ee1716767f9b"
+          "public_key": "3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE",
+          "short_id": "e572b6579ea525d4"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

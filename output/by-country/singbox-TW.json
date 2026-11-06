@@ -6,6 +6,18 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/oneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -17,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
       "server": "152.32.167.33",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -37,12 +49,26 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
+      "server": "18.141.210.28",
+      "server_port": 10000,
+      "password": "eRlY6dXnQ4QUzVOQi6YDfZWq",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg-transit-3.nebulacloud.win",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
       ]
     },
     {
@@ -50,7 +76,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe"
+        "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
