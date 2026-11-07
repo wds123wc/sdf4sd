@@ -16,16 +16,16 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 172.66.0.1
-  port: 2053
+  server: static.117.242.109.65.clients.your-server.de
+  port: 443
   udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
+  type: vless
+  uuid: 320536e8-b0d3-4afa-a5ec-de93356ce562
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.0.72.42.77.clients.your-server.de
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
