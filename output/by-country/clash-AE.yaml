@@ -29,7 +29,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -37,23 +37,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 109.120.155.155
-  port: 444
-  udp: true
-  type: vless
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +46,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +55,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
 rules:
 - MATCH,PROXIES

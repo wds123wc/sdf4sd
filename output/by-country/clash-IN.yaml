@@ -37,8 +37,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 122.176.216.52
   port: 443
