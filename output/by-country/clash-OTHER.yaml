@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.70.228
-  port: 443
+  server: n04.jinggai.online
+  port: 8443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
   tls: true
-  servername: jp3.yohototo.top
+  servername: n04.jinggai.online
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /nvl-n04-ws/e0577fe8fd7c8823
     headers:
-      Host: jp3.yohototo.top
+      Host: n04.jinggai.online
 proxy-groups:
 - name: PROXIES
   type: select
