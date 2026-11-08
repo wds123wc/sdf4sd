@@ -30,7 +30,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -42,36 +42,36 @@
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "66.163.118.62",
+      "server": "66.163.118.40",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "cdn.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-      "server": "66.163.118.244",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
       "server": "66.163.118.251",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
+      "server": "66.163.118.131",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
