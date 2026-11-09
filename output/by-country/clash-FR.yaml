@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 02 - xiaohe
-  server: 57.129.83.85
+  server: 198.244.202.215
   port: 19999
   udp: true
   type: ss
@@ -26,60 +26,48 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 04 - xiaohe
-  server: 38.109.228.110
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 05 - xiaohe
-  server: 198.244.202.215
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 06 - xiaohe
   server: 172.99.189.142
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 05 - xiaohe
+  server: 38.109.228.110
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 06 - xiaohe
+  server: 23.162.152.22
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 07 - xiaohe
-  server: 167.17.64.175
+  server: 57.129.83.85
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 08 - xiaohe
-  server: 138.124.70.41
-  port: 14430
+  server: 104.20.45.141
+  port: 443
   udp: true
   type: vless
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  uuid: 50414e45-4c5f-5a45-5553-7e7818beb9aa
+  tls: true
+  servername: razk50e1uvss.amirhoseyn-meshki.workers.dev
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vless
+    path: /stream/PANEL_ZEUS/7e7818beb9aafp=unsafe
     headers:
-      Host: 138.124.70.41
+      Host: razk50e1uvss.amirhoseyn-meshki.workers.dev
 - name: 🇫🇷 法国 (France) 09 - xiaohe
-  server: 167.17.64.27
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 10 - xiaohe
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 11 - xiaohe
   server: 51.77.217.70
   port: 2053
   udp: true
@@ -91,7 +79,7 @@ proxies:
     short-id: bfe58beb41f1d09f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 12 - xiaohe
+- name: 🇫🇷 法国 (France) 10 - xiaohe
   server: 13.36.234.11
   port: 443
   udp: true
@@ -99,6 +87,20 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 13.36.234.11
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - xiaohe
+  server: 167.17.64.175
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 12 - xiaohe
+  server: 167.17.64.27
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 13 - xiaohe
   server: 62.210.124.146
   port: 22000
@@ -116,20 +118,18 @@ proxies:
   sni: www.docker.com
   skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 15 - xiaohe
-  server: 152.228.139.33
-  port: 51671
+  server: 62.210.91.10
+  port: 23576
   udp: true
   type: vless
-  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
-    short-id: 2fed44d8c59f7e71
-  servername: www.sony.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc_common3
 - name: 🇫🇷 法国 (France) 16 - xiaohe
   server: 152.228.139.33
   port: 35108
@@ -146,13 +146,36 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc-common3
 - name: 🇫🇷 法国 (France) 17 - xiaohe
-  server: 23.162.152.22
-  port: 19999
+  server: 62.210.7.139
+  port: 60111
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: google.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 18 - xiaohe
+  server: 138.124.70.41
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 19 - xiaohe
+  server: mapzapravki.space
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: lada.locallynet.org
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 20 - xiaohe
   server: 212.69.86.159
   port: 8447
   udp: true
@@ -167,7 +190,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇫🇷 法国 (France) 19 - xiaohe
+- name: 🇫🇷 法国 (France) 21 - xiaohe
+  server: 15.236.109.186
+  port: 2053
+  udp: true
+  type: vless
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+  tls: true
+  servername: w.geogame.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 22 - xiaohe
   server: 161.97.160.224
   port: 443
   udp: true
@@ -179,7 +212,7 @@ proxies:
     public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
     short-id: e6
   servername: passport.yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -204,6 +237,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 17 - xiaohe
   - 🇫🇷 法国 (France) 18 - xiaohe
   - 🇫🇷 法国 (France) 19 - xiaohe
+  - 🇫🇷 法国 (France) 20 - xiaohe
+  - 🇫🇷 法国 (France) 21 - xiaohe
+  - 🇫🇷 法国 (France) 22 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -228,5 +264,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 17 - xiaohe
   - 🇫🇷 法国 (France) 18 - xiaohe
   - 🇫🇷 法国 (France) 19 - xiaohe
+  - 🇫🇷 法国 (France) 20 - xiaohe
+  - 🇫🇷 法国 (France) 21 - xiaohe
+  - 🇫🇷 法国 (France) 22 - xiaohe
 rules:
 - MATCH,PROXIES
