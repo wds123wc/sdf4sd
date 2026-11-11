@@ -4,32 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 冰岛 (Iceland) 01 - xiaohe
-  server: 191.44.112.170
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.16.10.135
   port: 443
   udp: true
   type: vless
-  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: orbylume.my.to
+  servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tvpn-tor/is
+    path: /tyxyws
     headers:
-      Host: orbylume.my.to
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 冰岛 (Iceland) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 冰岛 (Iceland) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
