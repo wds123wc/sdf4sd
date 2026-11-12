@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "104.165.205.42",
-      "server_port": 8443,
-      "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
+        }
       }
     },
     {
@@ -39,21 +48,90 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
-      "server": "138.124.180.137",
+      "server": "109.248.161.235",
       "server_port": 443,
-      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
-      "flow": "xtls-rprx-vision",
+      "uuid": "e5be613e-0b23-4c08-88fb-6b4a82055365",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "oslo.zovip2.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v3/pulse",
+        "headers": {
+          "Host": "oslo.zovip2.ir"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
+      "server": "104.165.205.42",
+      "server_port": 8443,
+      "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+      "server": "31.56.177.27",
+      "server_port": 443,
+      "uuid": "e5be613e-0b23-4c08-88fb-6b4a82055365",
+      "tls": {
+        "enabled": true,
+        "server_name": "oslo.zovip2.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
           "enabled": true,
-          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
-          "short_id": "33acba1b"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v3/pulse",
+        "headers": {
+          "Host": "oslo.zovip2.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
+      "server": "46.8.228.144",
+      "server_port": 443,
+      "uuid": "e5be613e-0b23-4c08-88fb-6b4a82055365",
+      "tls": {
+        "enabled": true,
+        "server_name": "oslo.zovip2.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v3/pulse",
+        "headers": {
+          "Host": "oslo.zovip2.ir"
         }
       }
     },
@@ -64,7 +142,10 @@
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe"
       ]
     },
     {
@@ -73,7 +154,10 @@
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,16 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 172.67.220.103
-  port: 2087
+  server: 38.107.234.57
+  port: 8443
   udp: true
-  type: trojan
-  password: 80d4cb87-ac70-e074-bc82-6313d2d1b539
-  sni: ayhanmansur-zedmeli.kdns.fr
-  skip-cert-verify: false
+  type: vless
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  tls: true
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiZXJaQklLRUh1R0UiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ==
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select

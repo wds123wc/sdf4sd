@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 138.124.242.46
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  tls: true
-  servername: pl2-edge.gacvpn.site
-  skip-cert-verify: false
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: connect-pl
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 201.58.139.66
   port: 443
   udp: true
@@ -35,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
-  - 🇵🇱 波兰 (Poland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
-  - 🇵🇱 波兰 (Poland) 02 - xiaohe
 rules:
 - MATCH,PROXIES
