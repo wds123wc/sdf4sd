@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -39,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -58,14 +44,39 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 04 - xiaohe",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
       "server": "13.140.253.35",
       "server_port": 443,
-      "uuid": "bcd3798c-a56f-6bfc-b738-a17c43bd4a50",
+      "uuid": "f1a7e2c8-b140-50d1-8acf-e62090f96599",
       "tls": {
         "enabled": true,
-        "server_name": "xray-m0642ki4-silver-nebula-10.cloady.io",
+        "server_name": "xray-bprkdwje-clever-comet-4.cloady.io",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -74,9 +85,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/362b2b2c7197d648",
+        "path": "/27dbf143acdd7bca",
         "headers": {
-          "Host": "xray-m0642ki4-silver-nebula-10.cloady.io"
+          "Host": "xray-bprkdwje-clever-comet-4.cloady.io"
         }
       }
     },
@@ -88,7 +99,8 @@
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
         "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe"
+        "🇮🇳 印度 (India) 04 - xiaohe",
+        "🇮🇳 印度 (India) 05 - xiaohe"
       ]
     },
     {
@@ -98,7 +110,8 @@
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
         "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe"
+        "🇮🇳 印度 (India) 04 - xiaohe",
+        "🇮🇳 印度 (India) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

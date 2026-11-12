@@ -4,15 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "th001.zestapp778.com",
-      "server_port": 33079,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "th001.zestapp778.com",
-        "insecure": false
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "b0253c6c-0b96-4950-bde1-669f13bc1a01",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
