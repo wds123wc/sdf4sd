@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 178.212.35.198
   port: 443
   udp: true
@@ -28,7 +16,7 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - xiaohe
+- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -39,33 +27,36 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04 - xiaohe
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 13.140.253.35
   port: 443
   udp: true
   type: vless
-  uuid: f1d3c8af71c4ef75625fcf446aa2c15b
+  uuid: f1d3c8af-71c4-ef75-625f-cf446aa2c15b
   tls: true
   servername: xray-h0urp9tx-rapid-summit-2.cloady.io
-  skip-cert-verify: true
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /050334203cc522a3
     headers:
       Host: xray-h0urp9tx-rapid-summit-2.cloady.io
-- name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: 152.67.8.205
-  port: 80
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 13.140.253.35
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
+  tls: true
+  servername: xray-m0642ki4-silver-nebula-10.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /362b2b2c7197d648
     headers:
-      Host: in-152.67.8.205-0202
+      Host: xray-m0642ki4-silver-nebula-10.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,7 +66,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,6 +75,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
   - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 rules:
 - MATCH,PROXIES
