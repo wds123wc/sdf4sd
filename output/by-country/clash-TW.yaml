@@ -13,12 +13,12 @@ proxies:
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES

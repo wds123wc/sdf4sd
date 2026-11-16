@@ -12,27 +12,27 @@ proxies:
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
 - name: 🇯🇵 日本 (Japan) 02 - xiaohe
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
   server: 138.3.208.26
   port: 50160
   udp: true
   type: hysteria2
   password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
+  sni: 138.3.208.26
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 05 - xiaohe
   server: 84.247.155.196
@@ -42,18 +42,19 @@ proxies:
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: zfapi.zalolink.com
-  port: 43149
+  server: 104.16.10.2
+  port: 443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
-  servername: psstatic.cdn.bcebos.com
-  client-fingerprint: firefox
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
