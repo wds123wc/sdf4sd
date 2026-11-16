@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: pcloud.z-tas.com
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
