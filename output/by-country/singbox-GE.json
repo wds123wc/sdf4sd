@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇷 阿根廷 (Argentina) 01 - xiaohe",
-      "server": "186.122.177.79",
+      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe",
+      "server": "194.135.119.135",
       "server_port": 443,
       "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ar1.gofizz.in",
+        "server_name": "ge1.gofizzin.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
-          "public_key": "pBEW9XYZQsXxjgt44pCQcxoEOe-B1CdxaTdTnL2QhAA",
-          "short_id": "a5d67406"
+          "public_key": "fVo5hYUD3VkxEetcXSMVWp7hjvz4YrKLNHDhGhn-d3M",
+          "short_id": "0640a12b"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇷 阿根廷 (Argentina) 01 - xiaohe"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇷 阿根廷 (Argentina) 01 - xiaohe"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
