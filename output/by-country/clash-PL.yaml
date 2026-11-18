@@ -16,17 +16,18 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 80.47.10.106
-  port: 443
+  server: 54.37.131.126
+  port: 80
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
+  type: vmess
+  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 82.118.22.161
   port: 443
