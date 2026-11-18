@@ -5,17 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 45.194.66.177
+  server: 144.31.0.101
   port: 443
   udp: true
   type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
   flow: xtls-rprx-vision
   tls: true
-  servername: 31tawwo0.virtual-network.lol
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 1eEtiZY5qDDosntp-9_xFnOIvOBzHy4d3-eA7v11qx0
+  servername: gmtrtb.wey-land.net
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 179.253.101.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app.streamru17.net
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -28,19 +39,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

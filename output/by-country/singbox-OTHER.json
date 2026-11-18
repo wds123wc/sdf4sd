@@ -4,21 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇺 匈牙利 (Hungary) 01 - xiaohe",
-      "server": "172.67.131.125",
-      "server_port": 2083,
-      "uuid": "f418674e-f518-4318-8ff9-e10000000046",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "chatgpt.com",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "smart-edge-424.arti98399-1905.workers.dev",
+        "server_name": "v2ray1.dozapp.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/syncfp=chrome",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "smart-edge-424.arti98399-1905.workers.dev"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -27,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
