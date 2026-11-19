@@ -16,18 +16,32 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "server": "13.55.52.44",
+      "server_port": 36712,
+      "password": "linlin-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "13.55.52.44",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
