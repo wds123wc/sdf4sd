@@ -22,6 +22,20 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  server: 212.109.193.194
+  port: 2096
+  udp: true
+  type: vless
+  uuid: e436321f-24a9-4c38-b935-7d7dee0c3f68
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
 rules:
 - MATCH,PROXIES
