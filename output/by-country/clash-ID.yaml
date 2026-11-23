@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: 149.33.27.162
+  server: i1tr.mateflora.com
   port: 443
   udp: true
   type: trojan

@@ -6,25 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
   server: 217.30.10.70
-  port: 9018
+  port: 9020
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: fG2artUmHfNT2cX7
+  password: BNmAXXxAHYpTRdzu
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 191.217.253.12
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6dd17e9f-5b7c-466d-a53a-7c30f5dc8338
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: 191.217.253.12
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 45.194.66.177
   port: 443
   udp: true
@@ -42,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
