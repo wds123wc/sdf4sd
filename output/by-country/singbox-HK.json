@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaohe",
-      "server": "nb1hk.hikigo.com",
-      "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "server": "8.217.1.203",
+      "server_port": 8443,
+      "uuid": "8b17beac-b143-447d-aa68-14cbb121a602",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nb1hk.hikigo.com",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38",
+          "short_id": "0bf55f64"
+        }
       }
     },
     {
@@ -23,7 +32,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3",
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
@@ -47,29 +56,67 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%e2%89%a1%c6%92%c3%a7",
+        "server_name": "https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaohe",
-      "server": "66hk.mateflora.com",
-      "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "server": "116.213.43.43",
+      "server_port": 11106,
+      "uuid": "2e7bd251-52be-4ffa-b79e-108e1fe07185",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "66hk.mateflora.com",
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-13uTSuqk44pCU0x6yvldaskzyRIlO2ihmDvM0FsBns",
+          "short_id": "da12e31124830d42"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
+      "server": "47.242.93.89",
+      "server_port": 12012,
+      "password": "12012",
+      "tls": {
+        "enabled": true,
+        "server_name": "ali-hk.b-gfw.cfd",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "aemx2gndpgrt1qau"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaohe",
+      "server": "45.192.193.54",
+      "server_port": 35600,
+      "uuid": "8614bde7-34cf-4413-8360-e96f1b960528",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.iij.ad.jp",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4",
+          "short_id": ""
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaohe",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - xiaohe",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -81,38 +128,6 @@
       "obfs": {
         "type": "salamander",
         "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaohe",
-      "server": "62.60.232.226",
-      "server_port": 2096,
-      "uuid": "3d409814-b663-411e-8f54-a112ecba7ddd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nova-house.justext.space",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - xiaohe",
-      "server": "pdmv4.xiaoyan.io",
-      "server_port": 16632,
-      "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com"
-        }
       }
     },
     {
