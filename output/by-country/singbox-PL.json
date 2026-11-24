@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
       "server": "217.30.10.70",
-      "server_port": 9018,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "fG2artUmHfNT2cX7"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "217.30.10.70",
-      "server_port": 9020,
-      "method": "aes-256-cfb",
-      "password": "BNmAXXxAHYpTRdzu"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
       "server": "191.217.253.12",
       "server_port": 443,
       "uuid": "6dd17e9f-5b7c-466d-a53a-7c30f5dc8338",
@@ -46,8 +38,7 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ]
     },
     {
@@ -55,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
-        "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe"
+        "🇵🇱 波兰 (Poland) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
