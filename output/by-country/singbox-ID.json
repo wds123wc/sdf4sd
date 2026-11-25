@@ -5,14 +5,14 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe",
-      "server": "157.254.38.210",
-      "server_port": 20051,
-      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "i1tr.mateflora.com",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "tls": {
         "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": false
+        "server_name": "i1tr.mateflora.com",
+        "insecure": true
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 79.127.139.242
+  server: 62.93.179.97
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  server: 66.163.118.62
-  port: 443
+  server: 79.127.139.242
+  port: 19999
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 66.163.118.251
   port: 443
@@ -26,6 +25,30 @@ proxies:
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: resources.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: 66.163.118.166
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 66.163.118.62
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  server: 66.163.118.115
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -35,6 +58,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +69,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - xiaohe
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
 rules:
 - MATCH,PROXIES
