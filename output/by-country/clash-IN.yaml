@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -15,21 +15,16 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: xray-ikmqcro3-rapid-river-6.cloady.io
-  port: 443
+  server: 13.140.56.100
+  port: 14430
   udp: true
   type: vless
-  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
-  tls: true
-  servername: xray-ikmqcro3-rapid-river-6.cloady.io
-  skip-cert-verify: false
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   network: ws
   ws-opts:
-    path: /c54a815e676d9acc
-    headers:
-      Host: xray-ikmqcro3-rapid-river-6.cloady.io
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
