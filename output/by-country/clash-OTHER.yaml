@@ -4,27 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: leviko-tr3795.shopingggg.ir
-  port: 50738
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.17.70.206
+  port: 8443
   udp: true
   type: vless
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
   tls: true
-  servername: turkey-ip1.mmdaqaorg.xyz
+  servername: free.sahanwickramasinghe.com
   skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
