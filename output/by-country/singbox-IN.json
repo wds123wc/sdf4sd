@@ -26,7 +26,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+      "server": "13.140.253.35",
       "server_port": 443,
       "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
       "tls": {
@@ -49,6 +49,25 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
+      "server": "13.140.253.35",
+      "server_port": 443,
+      "uuid": "213224a4-6cd1-b7f4-8bbc-4f50e5ed847b",
+      "tls": {
+        "enabled": true,
+        "server_name": "xray-ikmqcro3-rapid-river-6.cloady.io",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/c54a815e676d9acc",
+        "headers": {
+          "Host": "xray-ikmqcro3-rapid-river-6.cloady.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -61,13 +80,27 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe"
+        "🇮🇳 印度 (India) 03 - xiaohe",
+        "🇮🇳 印度 (India) 04 - xiaohe",
+        "🇮🇳 印度 (India) 05 - xiaohe"
       ]
     },
     {
@@ -76,7 +109,9 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe"
+        "🇮🇳 印度 (India) 03 - xiaohe",
+        "🇮🇳 印度 (India) 04 - xiaohe",
+        "🇮🇳 印度 (India) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

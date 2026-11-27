@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 143.246.136.128
+  server: leviko-tr3795.shopingggg.ir
   port: 50738
   udp: true
   type: vless
@@ -14,32 +14,17 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 194.135.34.118
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
-  tls: true
-  servername: web.hosttcp.fun
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v4/media/session
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES

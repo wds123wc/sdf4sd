@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "143.246.136.128",
+      "server": "leviko-tr3795.shopingggg.ir",
       "server_port": 50738,
       "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
       "tls": {
@@ -24,40 +24,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "194.135.34.118",
-      "server_port": 8443,
-      "uuid": "020f7f86-a559-4366-8d2d-c6f81d6bbe5f",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.hosttcp.fun",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v4/media/session"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
