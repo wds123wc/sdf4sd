@@ -6,16 +6,13 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.17.70.206",
-      "server_port": 8443,
-      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
+      "server": "104.19.164.155",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "free.sahanwickramasinghe.com",
+        "server_name": "jp3.yohototo.top",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "free.sahanwickramasinghe.com"
+          "Host": "jp3.yohototo.top"
         }
       }
     },

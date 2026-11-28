@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaohe",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -25,14 +39,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "13.140.253.35",
-      "server_port": 443,
-      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
+      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
+      "server": "147.93.171.8",
+      "server_port": 8443,
+      "uuid": "591e7de6-f2dd-4ff9-ae21-8e00d5affa2a",
       "tls": {
         "enabled": true,
-        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+        "server_name": "147-93-171-8.sslip.io",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -40,9 +57,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/0175469f14317d82",
+        "path": "/vpn-live",
         "headers": {
-          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
+          "Host": "147-93-171-8.sslip.io"
         }
       }
     },
@@ -52,7 +69,8 @@
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe"
+        "🇮🇳 印度 (India) 02 - xiaohe",
+        "🇮🇳 印度 (India) 03 - xiaohe"
       ]
     },
     {
@@ -60,7 +78,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe"
+        "🇮🇳 印度 (India) 02 - xiaohe",
+        "🇮🇳 印度 (India) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
