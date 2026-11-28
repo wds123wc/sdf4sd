@@ -28,20 +28,28 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 147.93.171.8
-  port: 8443
+  server: kuruish.org
+  port: 443
   udp: true
   type: vless
-  uuid: 591e7de6-f2dd-4ff9-ae21-8e00d5affa2a
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  servername: 147-93-171-8.sslip.io
+  servername: kuruish.org
   skip-cert-verify: false
-  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - xiaohe
+  server: 13.140.74.242
+  port: 443
+  udp: true
+  type: vless
+  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
+  tls: true
+  servername: xray-ikmqcro3-rapid-river-6.cloady.io
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vpn-live
+    path: /c54a815e676d9acc
     headers:
-      Host: 147-93-171-8.sslip.io
+      Host: xray-ikmqcro3-rapid-river-6.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +58,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +67,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "65.109.171.194",
+      "server": "mail1.besttotaldns.com",
       "server_port": 443,
       "uuid": "da14e323-6af7-406f-a5c2-1eb7975ada8b",
       "flow": "xtls-rprx-vision",

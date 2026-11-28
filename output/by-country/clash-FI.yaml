@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 65.109.171.194
+  server: mail1.besttotaldns.com
   port: 443
   udp: true
   type: vless
